@@ -1,0 +1,70 @@
+﻿<script src="@Url.Content("~/js/UI/Panels/PageSizeSettingsPanel.js")" type="text/javascript"></script>
+<div id="pageSizeSettingsPanel" localizationId="pageSizeSettingsPanel">
+    <table>
+        <tr>
+            <td><label localizationId="pageSizeLabel">Page Size:</label></td>
+            <td colspan="2">
+                <select id="pageSizeSelect">
+                    <option>Undefined</option>
+                    <option>A2</option>
+                    <option>A3</option>
+                    <option>A4</option>
+                    <option>A4Plus</option>
+                    <option>A5</option>
+                    <option>A6</option>
+                    <option>APlus</option>
+                    <option>B4</option>
+                    <option>B4Envelope</option>
+                    <option>B5</option>
+                    <option>B5Envelope</option>
+                    <option>B6Envelope</option>
+                    <option>BPlus</option>
+                    <option>C3Envelope</option>
+                    <option>C4Envelope</option>
+                    <option>C5Envelope</option>
+                    <option>C65Envelope</option>
+                    <option>C6Envelope</option>
+                    <option>CSheet</option>
+                    <option>Custom</option>
+                    <option>DLEnvelope</option>
+                    <option>DSheet</option>
+                    <option>ESheet</option>
+                    <option>Folio</option>
+                    <option>InviteEnvelope</option>
+                    <option>IsoB4</option>
+                    <option>Ledger</option>
+                    <option>Legal</option>
+                    <option>Letter</option>
+                    <option>LetterPlus</option>
+                    <option>Note</option>
+                    <option>Number10Envelope</option>
+                    <option>Number11Envelope</option>
+                    <option>Number12Envelope</option>
+                    <option>Number14Envelope</option>
+                    <option>Number9Envelope</option>
+                    <option>PersonalEnvelope</option>
+                    <option>Quarto</option>
+                    <option>Standard10x11</option>
+                    <option>Standard10x14</option>
+                    <option>Standard11x17</option>
+                    <option>Standard15x11</option>
+                    <option>Standard9x11</option>
+                    <option>Statement</option>
+                    <option>Tabloid</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input id="widthPageSize" type="number" min="10" max="10000" step="1" value="100" disabled />
+            </td>
+            <td>
+                <input id="heightPageSize" type="number" min="10" max="10000" step="1" value="100" disabled />
+            </td>
+            <td>
+                <label>mm</label>
+            </td>
+        </tr>
+    </table>
+</div>

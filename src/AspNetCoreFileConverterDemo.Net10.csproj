@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<Version>15.0.0.1</Version>
+		<EnableDefaultItems>false</EnableDefaultItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="10.0.0" />
+		<PackageReference Include="SkiaSharp" Version="3.119.0" />
+		<PackageReference Include="System.IO.Packaging" Version="10.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Vintasoft.Shared" Version="4.6.1.1" />
+		<PackageReference Include="Vintasoft.Imaging" Version="14.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.Drawing.SkiaSharp" Version="14.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.Dicom" Version="7.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.DocCleanup" Version="9.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.Jbig2Codec" Version="11.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.Jpeg2000Codec" Version="10.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.Office.OpenXml" Version="6.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.Pdf" Version="11.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.Pdf.Mrc" Version="11.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.Pdf.Office" Version="11.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.RawCodec" Version="14.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.WebpCodec" Version="14.1.19.1" />
+		<PackageReference Include="Vintasoft.Shared.Web" Version="4.6.1.1" />
+		<PackageReference Include="Vintasoft.Imaging.Web.Services" Version="14.1.19.1" />
+		<PackageReference Include="Vintasoft.Imaging.AspNetCore.ApiControllers" Version="14.1.19.1" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<Compile Include="Controllers\API\FileConverter\MyVintasoftImageConverterApiController.cs" />
+		<Compile Include="Controllers\API\FileConverter\MyVintasoftImageConverterWebService.cs" />
+		<Compile Include="Controllers\API\FileConverter\RequestParams\ConvertFileToPdfMrcRequestParams.cs" />
+		<Compile Include="Controllers\API\FileConverter\ResponseParams\GetImageFileInfoResponseParams.cs" />
+		<Compile Include="Controllers\API\FileConverter\WebPdfMrcCompressionState.cs" />
+		<Compile Include="Controllers\API\FileConverter\WebPdfMrcEncoderSettings.cs" />
+		<Compile Include="Controllers\API\File\MyVintasoftFileApiController.cs" />
+		<Compile Include="Controllers\API\ImageCollection\MyVintasoftImageCollectionApiController.cs" />
+		<Compile Include="Controllers\API\ImageRendering\MyVintasoftImageApiController.cs" />
+		<Compile Include="Controllers\DefaultController.cs" />
+		<Compile Include="CustomFontProgramsController.cs" />
+		<Compile Include="Program.cs" />
+		<Compile Include="Startup.cs" />
+		<Content Include="appsettings.Development.json" />
+		<Content Include="appsettings.json" />
+		<Content Include="Properties\launchSettings.json" />
+		<Content Include="Views\Shared\UI\Dialogs\DocumentRenderingSettingsDialog.cshtml" />
+		<Content Include="Views\Shared\UI\Panels\PageSizeSettingsPanel.cshtml" />
+		<Content Include="wwwroot\css\Demo.css" />
+		<Content Include="wwwroot\css\FileConverterDemo.css" />
+		<Content Include="wwwroot\favicon.ico" />
+		<Content Include="wwwroot\Images\fileUploadProgress.gif" />
+		<Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+		<Content Include="wwwroot\lib\jquery\LICENSE.txt" />
+		<Content Include="Views\Default\Index.cshtml" />
+		<Content Include="Views\Shared\_DemoViewLayout.cshtml" />
+		<Content Include="Views\Shared\UI\Dialogs\ErrorMessageDialog.cshtml" />
+		<Content Include="Views\Shared\UI\Dialogs\BlockUiDialog.cshtml" />
+		<Content Include="Views\Shared\UI\Dialogs\FileConversionProgressDialog.cshtml" />
+		<Content Include="Views\Shared\UI\Dialogs\FileConversionResultDialog.cshtml" />
+		<Content Include="Views\Shared\UI\Panels\ImageRenderingSettingsPanel.cshtml" />
+		<Content Include="wwwroot\lib\Vintasoft\Vintasoft.Imaging.css" />
+		<None Include="wwwroot\js\FileConverterDemo.js" />
+		<None Include="wwwroot\js\UI\Controls\WebFileConverterDemoControl.js" />
+		<None Include="wwwroot\js\UI\Dialogs\BlockUiDialog.js" />
+		<None Include="wwwroot\js\UI\Dialogs\ErrorMessageDialog.js" />
+		<None Include="wwwroot\js\UI\Dialogs\FileConversionProgressDialog.js" />
+		<None Include="wwwroot\js\UI\Dialogs\FileConversionResultDialog.js" />
+		<None Include="wwwroot\js\UI\Dialogs\ImageEncoderSettingsDialog.js" />
+		<None Include="wwwroot\js\UI\Dialogs\DocumentRenderingSettingsDialog.js" />
+		<None Include="wwwroot\js\UI\Panels\PageSizeSettingsPanel.js" />
+		<None Include="wwwroot\js\UI\Panels\ImageRenderingSettingsPanel.js" />
+		<None Include="wwwroot\js\WebPdfMrcEncoderSettingsJS.js" />
+		<None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+		<None Include="wwwroot\lib\bootstrap\LICENSE" />
+		<None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+		<None Include="wwwroot\lib\Vintasoft\Vintasoft.Imaging.Dialogs.Bootstrap.js" />
+		<None Include="wwwroot\lib\Vintasoft\Vintasoft.Imaging.js" />
+		<None Include="wwwroot\lib\Vintasoft\Vintasoft.Shared.js" />
+		<None Include="wwwroot\Resources\DefaultCMYK.icc" />
+		<None Include="wwwroot\Resources\DefaultRGB.icc" />
+		<Folder Include="wwwroot\UploadedImageFiles\" />
+	</ItemGroup>
+	
+</Project>
