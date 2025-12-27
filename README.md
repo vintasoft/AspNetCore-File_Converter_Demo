@@ -12,7 +12,7 @@ The project demonstrates how to convert images and documents in ASP.NET Core:
 
 
 ## Screenshot
-<img src="vintasoft_aspnet.core_angular-file_converter_demo.png" title="VintaSoft File Converter Demo for ASP.NET Core"><br />
+<img src="vintasoft_aspnet.core-file_converter_demo.png" title="VintaSoft File Converter Demo for ASP.NET Core"><br />
 
 
 ## Usage
